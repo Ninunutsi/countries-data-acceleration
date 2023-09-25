@@ -1,0 +1,304 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --white: #fefeff;
+  --purple: #6d2ed5;
+  --borderBlue: #252443;
+  --textColor: #84859a;
+  --darkerTextColor: #6f6f87;
+
+}
+
+.App{
+  padding: 2% 3%;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header select{
+  padding: 10px;
+  cursor: pointer;
+  color: #c7c8e8;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #6d2ed5;
+  outline: none;
+}
+
+.option{
+  color: #252443;
+}
+
+.main{
+  margin-top: 30px;
+}
+
+.flex-horizontal-space-btw{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-horizontal-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-data-heading{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.symbol{
+  font-size: 25px;
+  line-height: 30px;
+  color: #6f6f87;
+}
+
+.country-data-heading{
+  color: #fefeff;
+  font-size: 24px;
+  line-height: 33px;
+}
+ 
+.flag{
+  width: 80px;
+  margin: 0 20px;
+}
+
+.cca3{
+  background-color: #6d2ed5;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.whole-country-data{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.country-data-info-single{
+  border: 1px solid var(--borderBlue);
+  padding: 16px;
+  border-radius: 8px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.country-data-info-single h3{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  color: var(--darkerTextColor);
+}
+
+.country-data-info-single h2, span{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fefeff;
+}
+
+.currency-aeroports{
+  margin-top: 40px;
+
+}
+
+.links-nav{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.link{
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px;
+  color: #fefeff;
+  border-bottom: 2px solid #6d2ed5;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+}
+
+.link:hover{
+  color: #6d2ed5;
+  transition: 0.5s ease-in;
+}
+
+.currency{
+  margin-top: 20px;
+  background-color: #6d2ed5;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.currency-heading{
+  color: #efeff6;
+}
+
+.currency-main{
+  margin-top: 10px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  gap: 20px;
+}
+
+.calculator{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  color: #fefeff;
+}
+
+.currency-from{
+  position: relative;
+}
+
+.currency-symbol{
+  position: absolute;
+  color: #9495ac;
+  font-size: 15px;
+  font-weight: 500;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7px;
+}
+
+.currency-symbol::after{
+  content: '|';
+  margin-left: 2px;
+  color: #bcbcc5;
+}
+
+.input{
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 18px;
+  color: #6f6f87;
+  font-weight: 500;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"], input[type='text'] {
+  border: none;
+  outline: none;
+}
+
+.converted{
+  background-color: #fefeff;
+  padding: 15px 45px;
+}
+
+.airports-main{
+  background-color: #6d2ed5;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.airports-heading{
+  color: #efeff6;
+  font-size: 33px;
+  line-height: 38px;
+  letter-spacing: 1px;
+}
+
+.airport-input{
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #252443;
+  border-bottom: 1.5px solid #252443 !important;
+  width: 40%;
+}
+
+.airport-input::placeholder{
+  color: #252443;
+}
+
+
+.airports{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.airport-para{
+  width: 40%;
+  color: #efeff6;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  padding: 15px 15px;
+  border: 1px solid #bcbcc5;
+  border-radius: 7px;
+}
+
+.pls{
+  color: #efeff6;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 1px;
+}
+
+.error-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.error-page img{
+  width: 500px;
+}
+
+.home{
+  color: #bcbcc5;
+}
+
+.active-link {
+  background-color: rgb(246, 117, 246);
+  color: red;
+  /* Add any other styles you want for the active link */
+}

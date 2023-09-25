@@ -1,0 +1,51 @@
+@media(min-width: 667px) and (max-width: 1124px){         
+      .country-data-info-single{
+        width: 45%;
+      }  
+}
+
+@media(max-width: 667px){
+      .App{
+        padding: 4% 3%;
+      }
+      
+      .header{
+        justify-content: center;
+      }
+      
+      .symbol{
+        font-size: 22px;
+        line-height: 27px;
+      }
+      
+      .country-data-heading{
+        font-size: 22px;
+        line-height: 30px;
+      }
+       
+      .flag{
+        width: 60px;
+        margin: 0 15px;
+      }
+      
+      .cca3{
+        font-size: 16px;
+        padding: 3px 9px;
+      }
+      
+      .whole-country-data{
+        gap: 20px;
+      }
+      
+      .country-data-info-single{
+        width: 100%;
+      }    
+      
+      .airport-input{
+        width: 100%;
+      }
+      
+      .airport-para{
+        width: 100%;
+      }
+}
