@@ -28,6 +28,7 @@ const Currency = () => {
             console.log(`from ${currencyCode}`)
             console.log(`to ${selectedCurrency}`)
             const exchangeRate = data.info.rate;
+            // convert logic
             if (inputValue !== '' && !isNaN(inputValue)) {
               const convertedAmount = inputValue * exchangeRate;
               setConvertedAmount(convertedAmount);

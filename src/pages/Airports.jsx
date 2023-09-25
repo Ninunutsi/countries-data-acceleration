@@ -17,6 +17,7 @@ const Airports = () => {
   
   useEffect(() => {
     if(data && cca3){
+      // cache
       if (cache.hasOwnProperty(cca3)) {
         const cachedCountryData = cache[cca3]
         setCountryCode(cachedCountryData.countryCode)
@@ -36,6 +37,7 @@ const Airports = () => {
     
   }, [cca3, data,  debouncedInputValue, cache])
 
+  // receives data
   const fetchAirportsData = (countryCodeObj) => {
     fetch(`https://api.api-ninjas.com/v1/airports?country=${countryCodeObj}`, {
       method: 'GET',
@@ -80,6 +82,7 @@ const Airports = () => {
         onChange={handleSearchChange}
         className='airport-input'/>
       <div className="airports">
+        {/* searches */}
       {loading ? (
           <p style={{color: 'white'}}>Loading airports...</p>
         ) : (

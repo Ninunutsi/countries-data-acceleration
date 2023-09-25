@@ -13,7 +13,7 @@ const Country = () => {
     const [selectedCca3, setSelectedCca3] = useState('');
     const navigate = useNavigate();
     
-
+// useLazyFetch
     useEffect(() => {        
         fetchSelectedCountryData(`https://restcountries.com/v3.1/alpha/${cca3}`);
       }, [cca3]);
@@ -57,6 +57,7 @@ const Country = () => {
       <div className="currency-aeroports">
         <div>
           <nav className='links-nav'>
+            {/* nested routes */}
             <NavLink to={`/${cca3}`} className='link' activeClassName='active-link'>Currency-exchange</NavLink>
             <NavLink to='airports' className='link'  activeClassName='active-link'>Airports</NavLink>
           </nav>
